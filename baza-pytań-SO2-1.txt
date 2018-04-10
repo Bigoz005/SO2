@@ -1,0 +1,220 @@
+1. Nazwa u¿ytkownika zosta³a zdefiniowana jako Euzebiusz_Morawiecki. Na które z poni¿szych nazw nie mo¿e siê zalogowaæ dany u¿ytkownik?
+-Euzebiusz morawiecki
+-EuzebiuszMorawiecki
+-Euzebiusz_Moraw
+
+2. Czy w systemie Windows istnieje mo¿liwoœæ zablokowania zmiany hase³?
+-Tak
+
+3. Co mo¿na dodawaæ do lokalnych grup domeny, jeœli komputer Windows dzia³a w œrodowisku mieszanym?
+-konta u¿ytkowników oraz grupy lokalne
+
+4. Utworzone zostalo konto u¿ytkownika HaCkEr. Na które z poni¿szych nazw mo¿e siê zalogowaæ dany u¿ytkownik?
+-HACKER
+-HaCkEr
+-hAcKeR
+
+5. W pewnej firmie zwolniono pracownika, a na jego miejsce przyjêto nowego. W jaki sposób mozê sie on staæ wlaœcicielem plików po swoim poprzedniku?
+-Nale¿y tym plikom przypisaæ uprawnienie Przejêcie na w³asnoœæ dla nowego u¿ytkownika
+
+6. U¿ytkownik Nowak nale¿y do grup U¿ytkownicy, In¿ynierowe oraz Kierownictwo. Uprawnienia do folderu Dokumenty s¹ nastêpuj¹ce: Nowak Odczyt, U¿ytkownicy nie zdefiniowane, Kierownictwo Zapis, In¿ynierowie Pe³na kontrola. Jakie bêdzie mia³ uprawnienia Nowak do tego folderu?
+-Pe³na kontrola
+
+7. Skrót ACE oznacza:
+-Access Control Entry
+
+8. U¿ytkownik Jan Kowalski chce wybraæ swoje has³o. Które z poni¿szych propozycji s¹ zgodne z Zasadami tworzenia hase³ i zostan¹ zaakceptowane przez Windows?
+-#%kow&?
+-1Krysia3KowalskA9
+
+9. Czy system Windows mozna skonfigurowaæ tak, aby zachodzi³o automatyczne logowanie wybranego u¿ytkownika?
+-Tak
+
+10. Czy has³o zdefiniowane jako ??12#+??BDz zostanie przyjête przez system?
+-Tak
+
+11. Jak nazywa siê przystawka zwi¹zana z kontami i uzytkownikami?
+-Uzytkownicy i grupy lokalne
+
+12. Czy prawo Modyfikacja umo¿liwia wykonywanie wszystkich czynnoœci, które zawarte s¹ w prawie Odczyt?
+-Tak
+
+13. Uzytkownik Nowak ma prawo Odczyt dla folderu Dokumenty oraz jest cz³onkiem grupy Pracownicy oraz Menad¿erowie. Menad¿erowie maj¹ prawo Zapis, rownoczeœnie Pracownicy maja zabronone prawo zapis dla pliku Wa¿ne.doc znajduj¹cego sie w tym folderze. Jakie efektywne uprawnienia bêdzie mia³ Nowak dla Wa¿ne.doc?
+-Mo¿e tylko odczytywaæ ten plik
+
+14.  Czy konto bez przypisanej grupy utworzone w aplikacji U¿ytkownicy i grupy lokalne bêdzie widoczne w aplecie U¿ytkownicy i has³a?
+-Tak
+
+15. Czy mo¿na dodaæ grupê Administratorzy do innej grupy?
+-Nie
+
+16. Jakie s¹ standardowe prawa do folderów?
+-odczyt
+-wyœwietlanie zawartoœci
+-zapis
+-zapis i wykonanie
+-modyfikacja
+-pe³na kontrola
+
+17. Które z poni¿szych nazw u¿ytkowników zostan¹ zaakceptowane przez Windows?
+-Jasio
+
+18. Do czego s³u¿y polecenie Uruchom jako?
+-Pozwala wykonywaæ czynnosæi administracyjne z konta zwyk³ego u¿ytkownika
+
+19. Czy powinno siê pracowaæ na koncie Administrator jak na zwyk³ym u¿ytkowniku?
+-Nie
+
+20. Czy w systemie Windows mo¿na zablokowaæ konto u¿ytkownika nie usuwaj¹c go?
+-Tak
+
+21. U¿ytkownik nale¿y do grup Goœcie i Administratorzy. Której grupy bêdzie  mia³ uprawnienia?
+-Nast¹pi kumulacja uprawnieñ
+
+22. Czy prawo Odczyt i Zapis dla plików umo¿liwia zmianê jego zawartoœci?
+-Tak
+
+23. Jakie komunikaty s¹ wyœwietlane w momencie, gdy zostanie przekroczone ograniczenie przydzia³u dyskowego?
+-Komunikaty informuj¹ce o braku miejsca na dysku
+
+24. Za co odpowiada program ntdetect.com w trakcie startu systemu?
+-Przeprowadza test systemu, a nastêpnie jego wyniki przekazuje do NTLDR
+
+25. Ile maksymalnie klastrów mo¿e mieæ partycja FAT32 w systemiw windows?
+-4.177.918
+
+26. Ile wynosi minimalna iloœæ wolengo miejsca na dysku potrzebna do przeprowadzenia konwersji FAT32->NTFS?
+-110MB
+
+27. Czy w przypadku klastrów wiêkszych ni¿ 4 kB obs³ugiwana jest kompresja?
+-Nie
+
+28. Czy mo¿na skonfigurowaæ Windows w ten sposób aby w profilach uruchamiane by³y ró¿ne us³ugi?
+-Tak
+
+29. W jaki sposób mo¿na ustawiæ profil, aby by³ on profilem domyœlnym?
+-Przesun¹æ go na pocz¹tek listy profili
+
+30. Do czego s³u¿y us³uga Czas systemu Windows?
+-Umozliwia automatyczn¹ aktualizacje daty/czasu
+
+31. Czy drugi profil na liœcie mo¿ê byæ profilem domyœlnym?
+-Nie
+
+32. Które opcje s¹ aktywne, a które nie, zaraz po uruchomieniu narzêdzie Defragmentator dysków?
+-Aktywne: Analizuj, defragmentuj; Nieaktywne:wsztrzyma, zatrzyma, wyœwietl raport
+
+33. Czy mo¿liwe jest aby partycja systemu Windows 2000 by³a oparta o FAT32?
+-Tak
+
+34. Czy us³uga Zawiadamianie o zdarzeniu systemowym powinna byæ uruchamiana automatycznie?
+-Nie
+
+35. Jaka us³uga wykrywa i monitoruje podl¹czone dyski twarde?
+-Mened¿er dysków logicznych
+lub
+-Plug and Play
+
+36. Jakie konta u¿ytkowników dostêpne s¹ w systemie Windows po jego zainstalowaniu?
+-Administrator oraz Goœæ
+
+37. Które zdanie jest prawdziwe? W systemie istnieje konto jkowalski. Konto zosta³o usuniête, a nastêpnie ponownie za³o¿one pod t¹ sam¹ nazw¹.
+-Administrator bedzie musia³ na nowo przypisaæ uprawnienia dla tego konta
+
+38. Co oznacza skrót ACL?
+-Access Control List
+
+39. Do czego s³u¿y element Uruchamianie i odzyskiwanie na zak³adce Zaawansowane okna W³aœciwoœci systemu?
+-umo¿liwia wybór systemu operacyjnego ³adowanego domyœlnie podczas uruchamiania komputera
+-umozliwia wys³anie aletru administracyjnego w przypadku awarii systemu
+
+40. Czy istnieje mozliwoœæ zdefiniowania ró¿nych czêstotliwoœci próbkowania dla poszczególnych liczników w aplikacji Monitro wydajnoœci?
+-Nie
+
+41. Do jakich formatów jest mozliwy eksoprt plików dziennika?
+-txt
+-csv
+
+42. Które z liczników nie s¹ mo¿liwe do dodania w aplikacji Monitor wydajnoœci?
+-Protokó³ IP - Datagramy/min
+-Procesro - Szybkoœæ DPC
+
+43. W jaki sposób administrator mo¿e ustawiæ profil domyœlny, jeœli czas wyœwietlania menu wyboru profilów zosta³ ustawiony na zero?
+-Podczas startu systemu wcisn¹æ klawisz F5
+-przesunaæ wybrany profil na pocz¹tek listy
+-Zmieniæ wartoæœ parametru timeout w pliku boot.ini na wartoœæ wiêksz¹ od zera
+
+44. Wersja zainstalowanego systemu Windows mozliwa jest do sprawdzenia za pomoc¹?
+-aplikacji msinfo32->Podsumowanie systemu
+-wykorzystuj¹c polecenie ver
+
+45. Uruchomienie aplikacji Monitor wydajnoœci mozliwe jest poprzez
+-uruchomienie przystawki perfom.msc
+-uruchomienie konsoli MMc i dodanie Format ActiveX->System Monitor Control
+
+46. Czy po wybraniu opcji Zast¹p zdarzenia w razie potrzeby w ustawieniach dziennikwo w podgl¹dzie zdarzeñ?
+-Jeœli dziennik przekroczy dozwolony rozmiar, najstarsze zdarzenia bêd¹ nadpisywane
+
+47. Czy w systemie Windows mo¿na sformatowaæ partycjê FAT32 o rozmiarze 2TB?
+-Nie
+
+48. Jakie us³ugi zale¿¹ od, a jakie wymagaj¹ us³ugi Przegl¹darka komputera?
+-us³uga "Przegl¹darka komputera" zale¿y od us³ug Serwer i Stacja robocza, a nie jest wymagana przez ¿adne us³ugi
+
+49. Mozliwy jest zapis w aplikacji Monitor wydajnoœæi do pliku htm lub tsv.  Które z poni¿szych stwierdzeñ jest prawdziwe?
+-W pliku html nie ma nazwy komputera, dla którego zosta³y zarejestrowane
+-Plik tsv zawiera dane dotycz¹ce daty i godziny wygenerowania raportu.
+
+50. Do jakiego dziennika wpadnie powiadomienie o tym, ¿e us³uga inteligentnego transferu w tle weszla w stan uruchomienia?
+-Aplikacji
+
+51. U¿ytkownik posiada prawo Odczyt do folderu, a grupa, do której nale¿y ma prawo Modyfikacja. Jakie bêdzie mia³ prawa u¿ytkownik?
+-Modyfikacja
+
+52. Do zarz¹dzania interfejsami sieciowymi w Panelu sterowania w systemie Windows s³u¿y polecenie?
+-Centrum sieci i udostêpniania
+
+53. Jakie dane s¹ przechowywane w pliku tsv zapisanym w aplikacji Wydajnoœæ?
+-nazwa obiektu
+-godzina wygenerowania pliku
+-nazwa komputera, którego raport siê tyczy
+
+54. W systemie wszystkie litery mamy przypisane przez system. Do komputera wk³adamy dysk z dwiema partycjami podstawowymi. Jakie litery zostan¹ przypisane partycjom wk³adanego dysku, je¿eli g³ówny dysk ma jedn¹ podstawow¹ partycjê z liter¹ C i rozszerzon¹ z liter¹ D?
+-D,E
+
+55. U¿ytkownik kierownik_zespolu bêdzie musia³ przypisaæ uprawnienia do folderu dla kierowanych przez niego pracowników, Administrator systemu nie mo¿e przypisaæ mu uprawnienia Pe³na kontrola, nie mo¿e zostaæ on równie¿ w³aœcicielem tego foleru. Jakie uprawnienie nale¿y przypisaæ temu u¿ytkownikowi, aby móg³ on przypisaæ uprawnienia do tego folderu dla swoich pracowników?
+-Trzeba skorzystaæ z uprawnienia Zmiana uprawnieñ
+
+56. Które z zadañ s¹ mo¿liwe do zrealizowania przy pomocy WSH?
+-operacje na obiektach
+-dostêp do rejestru systemowego
+-obs³uga drukarek sieciowych
+
+57. Do najwa¿niejszych operatorów arytmetycznych VB nale¿y
+-modulo
+-dzielenie
+
+58. Które z poni¿szych stwierdzeñ nie jest prawdziwe
+-Wscript wyswietla na konsoli, a Cscript w okienku
+
+59. Czy mo¿liwe jest w VB deklarowanie parametrów domyœlnych, których nie trzeba podawaæ podczas wywo³ania?
+-Tak
+
+60. Czy funkcja w VB moze pe³nic role r-wyra¿enia?
+-Tak
+
+61. Czy wyra¿enie "procedura parametr10=:4" jest prawidlowe?
+-Nie
+
+62. Najwa¿niejszymi sk³adnikami VB s¹:
+-operatory
+-funkcje
+-zmienne
+
+63. Czy mo¿liwe jest wykonanie skryptu WSH bez wyœwietlania tekstu o wersji WSH?
+-Tak
+
+64. Czy mo¿liwe jest zatrzymanie skryptu WSH po okreœlonym czasie?
+-Tak
+
+65. 

@@ -1,0 +1,256 @@
+Napisz skrypt który z katalogu podanego jako parametr wypisze pliki pasuj1ce do wzorca. O wartooci wzorca nale?y zapytaa u?ytkownika.
+
+Dim oFSO, folder, wzorzec, Path
+
+Path = "C:\Users\Jarek\Desktop\"+WScript.Arguments(0)
+wzorzec = CStr( InputBox("Podaj wzorzec: ") )
+WScript.Echo WScript.Arguments(0)
+Set oFSO = CreateObject("Scripting.FileSystemObject") 
+Set folder = oFSO.GetFolder(Path)
+ 
+WScript.Echo (Path+"\"+wzorzec)
+If oFSO.FileExists(Path+"\"+wzorzec) Then
+  WScript.Echo Path+"\"+wzorzec
+  Else
+  WScript.Echo "Brak plikow pasujacych do wzorca"
+End If
+
+'*Set subfolders = folder.subfolders 
+'*MsgBox subfolders.Count
+
+
+'*#####################################################################
+
+WZORZEC DOBRA WERSJA:
+Set objFSO = CreateObject("Scripting.FileSystemObject") 
+strFile = "C:\Users\Jarek\Desktop\abc\zxc.txt" 
+Set objFile = objFSO.OpenTextFile(strFile) 
+Do Until objFile.AtEndOfStream strLine = objFile.ReadLine 
+    Dim re, strLine 
+    Set re = New RegExp 
+    if InStr(strLine,"name=""BIOSCUPP") > 0 Then 
+        re.Pattern = "\d+" 
+        Set colMatch = re.Execute(strLine) 
+        For Each objMatch In colMatch 
+           strLine = Replace(strLine, objMatch.Value, "30") 
+        Next 
+	End IF
+			
+     WScript.Echo strLine 
+Loop
+
+'*#####################################################################
+dla podanej przez u?ytkownika lokalizacji/ocie?ki wypisaa liczbe podkatalogów
+
+Dim oFSO, folder, subfolders, userPath
+
+userPath = CStr( InputBox("Podaj sciezke: ") )
+
+Set oFSO = CreateObject("Scripting.FileSystemObject") 
+Set folder = oFSO.GetFolder(userPath) 
+Set subfolders = folder.subfolders 
+MsgBox subfolders.Count
+
+
+'*#####################################################################
+Napisaa skrypt który pobiera pliki z folderu wskazanego przez u?ytkownika a nastepnie wyrzuca komunikaty zawieraj1ce nazwe pliku i rozmiar w MB
+
+
+
+Dim fso
+Dim ObjFolder
+Dim ObjOutFile
+Dim ObjFiles
+Dim ObjFile
+
+'Creating File System Object
+Set fso = CreateObject("Scripting.FileSystemObject")
+
+'Getting the Folder Object
+Set ObjFolder = fso.GetFolder("C:\Users\Jarek\Desktop\abc")
+
+'Creating an Output File to write the File sizes
+'Set ObjOutFile = fso.CreateTextFile("C:\Users\Jarek\Desktop\abc\wynik.txt")
+
+'Getting the list of Files
+Set ObjFiles = ObjFolder.Files
+
+'Writing sizes and Path of each File to Output File
+For Each ObjFile In ObjFiles
+  size = Round(ObjFile.size / 1024, 2)
+  WScript.Echo ObjFile.Name +"  " + CStr(size) + "kb"
+  'ObjOutFile.WriteLine size & "KB"  & String(50 - Len(size), " KB ") & ObjFile.Path
+Next
+
+
+'*#####################################################################
+ wypisaa wszystkie podfoldery z danego folderu którego nazwe wpisuje u?ytkownik. mam wypisaa nazwe i rozmiar tych podfolde
+
+
+Dim fso
+Dim ObjFolder
+Dim ObjFiles
+Dim ObjFile
+
+'Creating File System Object
+Set fso = CreateObject("Scripting.FileSystemObject")
+
+'Getting the Folder Object
+Set ObjFolder = fso.GetFolder("C:\Users\Jarek\Desktop\abc\" + userPath)
+userPath = CStr( InputBox("Podaj sciezke: ") )
+Set subfolders = ObjFolder.subfolders 
+
+'Getting the list of Files
+Set ObjFiles = ObjFolder.subfolders 
+
+'Writing sizes and Path of each File to Output File
+For Each ObjFile In ObjFiles
+  size = Round(ObjFile.size / 1024/1024, 2)
+  WScript.Echo ObjFile.Name +"  "+CStr(size) + "MB"
+Next
+
+'*#####################################################################
+podajesz adres folderu i skrypt wyowietla nazwe najstarszego pliku
+
+Set objFSo = CreateObject("Scripting.FileSystemObject")
+Set objFolder = objFSO.GetFolder("C:\Users\Jarek\Desktop\abc\")
+
+Set colFiles = objFolder.Files
+
+dtmOldestDate = Now
+ 
+For Each objFile in colFiles
+    If objFile.DateCreated < dtmOldestDate Then
+        dtmOldestDate = objFile.DateCreated
+        strOldestFile = objFile.Path
+		
+    End If	
+Next
+WScript.Echo CStr(strOldestFile)
+
+'*#####################################################################
+'*http://pastebin.com/SRm3d9gK
+'*http://kik.pcz.pl/so/file_www.php?co=569349
+
+//moje
+
+s\Desktop\Plik.txt")
+oTS.WriteLine "Data to: " &Now()
+oTS.Close
+WScript.Echo "Zapisano date do pliku!" 
+
+**************************************************************
+##############################################################
+Obliczya pierwiastki równania kwadratowego
+parametry podane przez u?ytkownika.
+##############################################################
+**************************************************************
+
+WScript.Echo "Skrypt obliczajacy pierwiastki rownania kwadratowego."
+Dim x0, x1, x2, a, b, c, i, delta
+a = CInt(InputBox("Podaj a (x^2): "))
+b = CInt(InputBox("Podaj b (x): "))
+c = CInt(InputBox("Podaj c (wyraz wolny): "))
+delta = b*b - 4*a*c
+If delta>0 Then
+x1 = (-b-Sqr(delta))/2*a
+x2 = (-b+Sqr(delta))/2*a
+WScript.echo "Rozwiazaniem sa dwa pierwiastki"
+WScript.echo "x1 = "&x1
+WScript.echo "x2 = "&x2
+ElseIf delta<0 Then
+WScript.echo "Brak pierwiastkow"
+Else
+x0 = -b/2*a
+WScript.echo "Rozwiazaniem jest pierwiastek x0 = " &x0
+End If
+
+**************************************************************
+##############################################################
+Wylistowaa wszystkie zmienne systemowe
+/*
+http://www.robvanderwoude.com/vbstech_data_environment.php
+*/
+##############################################################
+**************************************************************
+
+WScript.Echo "Wylistowac wszystkie zmienne systemowe"
+Set wshShell = CreateObject( "WScript.Shell" )
+WScript.Echo wshShell.ExpandEnvironmentStrings( "%PATHEXT%" )
+
+**************************************************************
+##############################################################
+Ile dni zostalo do wakacji
+##############################################################
+**************************************************************
+
+WScript.echo "Podaj date w formacie YYYY-MM-DD"
+dtm1 = (InputBox("Podaj date (YYYY-MM-DD): "))
+dtm2="2014-06-27"
+WScript.Echo "Roznica pomiedzy datami " &dtm1 & " i " & dtm2
+intYearsDifferent=DateDiff("yyyy", dtm1, dtm2)
+intMonthsDifferent=DateDiff("m", dtm1, dtm2)
+intDaysDifferent=DateDiff("d", dtm1, dtm2)
+If (intDaysDifferent > 0) Then
+WScript.Echo "Do wakacji zostalo: " &intDaysDifferent
+Else
+WScript.Echo "Wakacje 2014 wlasnie trwaja! (zostalo: " &intDaysDifferent &") dni"
+End If
+
+**************************************************************
+##############################################################
+Czy rok jest przestepny?
+##############################################################
+**************************************************************
+
+Dim i
+i = InputBox("Podaj rok: ")
+
+If i Mod 4 = 0 and i Mod 100 > 0 Then 
+    MsgBox ("Rok przestepny")
+ElseIf i Mod 400 = 0 Then
+    MsgBox ("Rok przestepny")
+Else
+    MsgBox ("Rok NIE jest przestepny")
+End If
+
+**************************************************************
+##############################################################
+
+Napisz skrypt ktory z katalogu podanego jako parametr wypisze
+pliki pasujace do wzorca. 
+O wartosci wzorca nalezy zapytac uzytkownika
+
+##############################################################
+**************************************************************
+
+'Prosba o podanie wzorca
+a = InputBox("Podaj wzorzec")
+'Folder w ktorym beda szukane pliki
+Dim folder
+folder = "c:\pliki\"
+Dim lista
+
+'Wyszukanie plikow
+set shell = createobject("wscript.shell") 
+set d = CreateObject("Scripting.Dictionary") 
+sCmd = "%comspec% /c dir "&folder&"*"&a&" /b /a-d | sort" 
+set wsx = shell.exec(sCmd) 
+set wsxOut = wsx.stdout 
+sOutput = "" 
+do: wscript.sleep 10 
+  do until wsxOut.atendofstream 
+    d(d.count) = wsxOut.readline 
+	
+  loop 
+loop until wsx.status <> 0 and wsxOut.atendofstream 
+
+'Wypisanie listy plikow
+for i = 0 To (d.count-1) 
+	 lista = lista & vbCrLf & (i+1) & ". " & d.item(i)
+	 'lista = dodanie do listy / nowy wiersz / numer w kolejnosci / nazwa pliku
+next
+msgbox "Lista znalezionych plikow:" & vbCrLf & lista & vbCrLf & vbCrLf  & "Lacznie plikow: " &d.count
+
+
+**************************************************************
